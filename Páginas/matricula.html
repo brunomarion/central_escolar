@@ -14,27 +14,36 @@
         </div>
     </header>
     <section class="conteiner">
-        <h1>Cadastro do Responsável</h1>
+        <div class="titulo1">
+            <h1>Cadastro do Responsável</h1>
+            <hr>
+        </div>
                 <form>
                     <div class="campo">
-                        <label for="">Nome do Responsável</label>
-                        <input type="text" placeholder="Digite o nome completo" name="nome" id="responsavel">
+                        <label for="">Nome Completo do Responsável</label>
+                        <input style="width: 300px;" type="text" placeholder="Digite o nome completo" name="nome" id="responsavel">
+                    </div>
                     <div class="campo">
                         <label for="">CPF</label>
-                        <input type="text" placeholder="Digite o CPF do responsável" name="cpf" id="cpf-responsavel">
+                        <input style="width: 200px;" type="text" placeholder="Digite o CPF do responsável" name="cpf" id="cpf-responsavel" required>
                     </div>
                     <div class="campo">
                         <label for="">Endereço Completo</label>
-                        <input type="text" placeholder="Digite o Endereço Completo do responsável" name="cpf" id="rg-responsavel">
+                        <input style="width: 300px;" type="text" placeholder="Digite o Endereço Completo" name="cpf" id="rg-responsavel">
+                    </div>
                     <div class="campo">
                         <label for="">CEP</label>
-                        <input type="text" placeholder="Digite o RG do responsável" name="cpf" id="rg-responsavel">
+                        <input type="text" placeholder="Digite o CEP" name="cpf" id="rg-responsavel">
                     </div>
                     <div class="campo">
                         <label for="">Telefone</label>
-                        <input type="text" placeholder="Digite um telefone para contato" name="cpf" id="cpf-responsavel">
+                        <input type="text" placeholder="(xx) xxxxx-xxxx" name="cpf" id="cpf-responsavel" required>
+                    </div>
+                    <div class="botao">
+                        <button>Salvar dados</button>
                     </div>
                 </form>     
     </section>
+
 </body>
 </html>
