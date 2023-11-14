@@ -16,8 +16,8 @@ body{
     display: flex;
     padding: 10px;
     height: 420px;
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 150px;
+    margin-left: 150px;
     border-radius: 10px;
     justify-content: space-around;
     align-items: center;
