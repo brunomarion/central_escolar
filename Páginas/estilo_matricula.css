@@ -84,5 +84,11 @@ button{
 
 }
 
+form select{
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 9px;
+}
+
 
 
