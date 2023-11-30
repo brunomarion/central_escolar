@@ -61,7 +61,7 @@ form input{
     align-items: end;
     padding: 5px;
     margin-bottom: 20px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 button{
@@ -88,6 +88,7 @@ form select{
     border: 1px solid;
     border-radius: 9px;
 }
+
 
 
 
