@@ -27,6 +27,18 @@
         $result = mysqli_query($conexao, "INSERT INTO responsavel(nome, cpf, endereco, cep, telefone, email) VALUES ('$nome','$cpf','$endereco','$cep','$telefone','$email')");
 
     }
+
+    if(isset($_POST['submit2'])){
+
+        include("../config.php");
+        $nome = $_POST['nome_aluno'];
+        $serie = $_POST['serie'];
+        $turno = $_POST['turno'];
+        $obs = $_POST['obs'];
+
+        //Criando Variável para realizar a conexão com a variável criada no "config.php":
+        $result = mysqli_query($conexao, "INSERT INTO aluno(nome, serie, turno, obs) VALUES ('$nome','$serie','$turno','$obs')");
+    }
 ?>
 
 
@@ -90,12 +102,12 @@
                 <form action="matricula.php" method="POST">
                     <div class="campo">
                         <label for="">Nome Completo do Aluno</label>
-                        <input style="width: 300px;" type="text" placeholder="&#9998 Digite o nome completo" name="nome" id="responsavel">
+                        <input style="width: 300px;" type="text" placeholder="&#9998 Digite o nome completo" name="nome_aluno" id="aluno">
                     </div>
                     <div class="campo" style=" display: flex; flex-direction: row; justify-content: space-between; height: 100px;">
                         <div style="margin-left: 290px; margin-top: 1px;">
                             <label for="">Série </label>
-                            <select style="width: 130px; height: 28px;" name="" id="">
+                            <select style="width: 130px; height: 28px;" name="serie" id="serie">
                                 <option>Selecione</option>
                                 <option value="">Infantil II</option>
                                 <option value="">Infantil III</option>
@@ -112,9 +124,9 @@
                             <div style=" margin-right: 290px; margin-top: 0.5px;">
                                 <p style="font-size: 15px;">Turno</p>
                                     <div style="flex-direction: row; margin-top: 3px;">
-                                        <input type="checkbox" id="scales" name="scales" checked />
+                                        <input type="checkbox" id="turno" name="turno" />
                                         <label for="scales">Manhã</label>
-                                        <input type="checkbox" id="scales" name="scales" checked />
+                                        <input type="checkbox" id="turno" name="turno" />
                                         <label for="scales">Tarde</label>
                                     </div>
                             </div>
@@ -122,10 +134,10 @@
                     </div>
                     <div class="campo">
                         <label for="" style=>*Observações adicionais:</label>
-                        <textarea name="" id="" cols="40" rows="5" placeholder=".\ Alergias/Medicamentos/informações importantes.\"></textarea>
+                        <textarea name="obs" id="obs" cols="40" rows="5" placeholder=".\ Alergias/Medicamentos/informações importantes.\"></textarea>
                     </div>
                     <div class="botao">
-                        <button type="submit" name="submit" id="submit">Salvar dados</button>
+                        <button type="submit" name="submit2" id="submit2">Salvar dados</button>
                     </div>
                 </form>     
     </section>
