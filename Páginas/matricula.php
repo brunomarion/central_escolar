@@ -14,17 +14,17 @@
         //print_r($_POST['email']);
 
         //Conectando a página à conexão do config.php para o banco de dados!
-        include_once('config.php');
+        include("../config.php");
 
         $nome = $_POST['nome'];
         $cpf = $_POST['cpf'];
         $endereco = $_POST['endereco'];
         $cep = $_POST['cep'];
-        $telefone = $_POST['telefone']
+        $telefone = $_POST['telefone'];
         $email = $_POST['email'];
 
         //Criando Variável para realizar a conexão com a variável criada no "config.php":
-        $result = mysqli_query($conexao, );
+        $result = mysqli_query($conexao, "INSERT INTO responsavel(nome, cpf, endereco, cep, telefone, email) VALUES ('$nome','$cpf','$endereco','$cep','$telefone','$email')");
 
     }
 ?>
@@ -78,7 +78,7 @@
                         </div>
                     </div>
                     <div class="botao">
-                        <button type="submit" value="Submit">Salvar dados</button>
+                        <button type="submit" name="submit" id="submit">Salvar dados</button>
                     </div>
                 </form>     
     </section>
@@ -125,7 +125,7 @@
                         <textarea name="" id="" cols="40" rows="5" placeholder=".\ Alergias/Medicamentos/informações importantes.\"></textarea>
                     </div>
                     <div class="botao">
-                        <button type="submit" value="Submit">Salvar dados</button>
+                        <button type="submit" name="submit" id="submit">Salvar dados</button>
                     </div>
                 </form>     
     </section>

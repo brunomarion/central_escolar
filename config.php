@@ -7,11 +7,11 @@
     $conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 
     //Teste de conexão com o banco de dados:
-    if($conexao->connect_errno){
+    //if($conexao->connect_errno){
 
-        echo"Houve um erro na conexão com o banco de dados!";
-    }else{
+        //echo"Houve um erro na conexão com o banco de dados!";
+    //}else{
 
-        echo"Conexão Efetuada com sucesso!";
-    }
+        //echo"Conexão Efetuada com sucesso!";
+    //}
 ?>
