@@ -1,3 +1,35 @@
+<?php
+    if(isset($_POST['submit'])){
+        //Teste para saber se os dados estão sendo salvos:
+        //print_r($_POST['nome']);
+        //print_r('<br>');
+        //print_r($_POST['cpf']);
+        //print_r('<br>');
+        //print_r($_POST['endereco']);
+        //print_r('<br>');
+        //print_r($_POST['cep']);
+        //print_r('<br>');
+        //print_r($_POST['telefone']);
+        //print_r('<br>');
+        //print_r($_POST['email']);
+
+        //Conectando a página à conexão do config.php para o banco de dados!
+        include_once('config.php');
+
+        $nome = $_POST['nome'];
+        $cpf = $_POST['cpf'];
+        $endereco = $_POST['endereco'];
+        $cep = $_POST['cep'];
+        $telefone = $_POST['telefone']
+        $email = $_POST['email'];
+
+        //Criando Variável para realizar a conexão com a variável criada no "config.php":
+        $result = mysqli_query($conexao, );
+
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -18,7 +50,7 @@
             <h1>Cadastro do Responsável</h1>
             <hr>
         </div>
-                <form>
+                <form action="matricula.php" method="POST">
                     <div class="campo">
                         <label for="">Nome Completo do Responsável</label>
                         <input style="width: 300px;" type="text" placeholder="&#9998 Digite o nome completo" name="nome" id="responsavel">
@@ -29,24 +61,24 @@
                     </div>
                     <div class="campo">
                         <label for="">Endereço Completo</label>
-                        <input style="width: 300px;" type="text" placeholder="Digite o Endereço Completo" name="cpf" id="rg-responsavel">
+                        <input style="width: 300px;" type="text" placeholder="Digite o Endereço Completo" name="endereco" id="rg-responsavel">
                     </div>
                     <div class="campo">
                         <label for="">CEP</label>
-                        <input type="text" placeholder="Digite o CEP" name="cpf" id="rg-responsavel">
+                        <input type="text" placeholder="Digite o CEP" name="cep" id="rg-responsavel">
                     </div>
                     <div class="campo" style="display: flex; flex-direction: row; justify-content: space-between; height: 50px;">
                         <div style="margin-left: 250px;">
                             <label for="">Telefone para contato</label>
-                            <input type="text" placeholder="&#9742 (xx) xxxx-xxx" name="cpf" id="cpf-responsavel" required>
+                            <input type="text" placeholder="&#9742 (xx) xxxx-xxx" name="telefone" id="cpf-responsavel" required>
                         </div>
                         <div style="margin-right: 250px;">
                             <label for="">Email</label>
-                            <input type="text" placeholder= "&#9993 Digite aqui seu e-mail"; name="cpf" id="cpf-responsavel" required style="width: 170px;">
+                            <input type="text" placeholder= "&#9993 Digite aqui seu e-mail"; name="email" id="cpf-responsavel" required style="width: 170px;">
                         </div>
                     </div>
                     <div class="botao">
-                        <button>Salvar dados</button>
+                        <button type="submit" value="Submit">Salvar dados</button>
                     </div>
                 </form>     
     </section>
@@ -55,7 +87,7 @@
             <h1>Cadastro do Aluno</h1>
             <hr>
         </div>
-                <form>
+                <form action="matricula.php" method="POST">
                     <div class="campo">
                         <label for="">Nome Completo do Aluno</label>
                         <input style="width: 300px;" type="text" placeholder="&#9998 Digite o nome completo" name="nome" id="responsavel">
@@ -93,7 +125,7 @@
                         <textarea name="" id="" cols="40" rows="5" placeholder=".\ Alergias/Medicamentos/informações importantes.\"></textarea>
                     </div>
                     <div class="botao">
-                        <button>Salvar dados</button>
+                        <button type="submit" value="Submit">Salvar dados</button>
                     </div>
                 </form>     
     </section>
