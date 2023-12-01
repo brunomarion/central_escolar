@@ -11,13 +11,15 @@ body{
     margin: auto;
 
 }
-
-.conteiner_menu{
+.conteiner{
     background-color: #050a30;
-    width: 200px;
-    align-items: center;
-    justify-content: center;
     display: flex;
+    padding: 10px;
+    height: 420px;
+    margin-right: 190px;
+    margin-left: 190px;
+    border-radius: 10px;
+    align-items: center;
 }
 
 img{
@@ -28,5 +30,6 @@ img{
     display: flex;
     justify-content: space-evenly;
 }
+
 
 

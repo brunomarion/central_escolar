@@ -10,8 +10,10 @@
     //if($conexao->connect_errno){
 
         //echo"Houve um erro na conexão com o banco de dados!";
+
     //}else{
 
         //echo"Conexão Efetuada com sucesso!";
+        
     //}
 ?>
