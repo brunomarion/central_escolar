@@ -57,6 +57,9 @@
             <img class="logo_principal" src="../Imagens/logo_principal.png" alt="Logo_central_escolar">
         </div>
     </header>
+        <div style="position: absolute; margin-top: 19px; margin-left: 230px">
+            <a href="../index.html"><button style="border: 2px solid black; background-color: gray">&#8592;</button></a>
+        </div>
     <section class="conteiner">
         <div class="titulo1">
             <h1>Cadastro do Responsável</h1>
@@ -107,7 +110,7 @@
                     <div class="campo" style=" display: flex; flex-direction: row; justify-content: space-between; height: 100px;">
                     <div class="campo" style="margin-left: 290px; margin-top: 3px">
                         <label for="">Série</label>
-                        <input type="text" placeholder="Digite a série do 1º ano 5ºano" name="cep" id="rg-responsavel">
+                        <input type="text" placeholder="Digite a série do 1º ano 5ºano" name="serie" id="serie">
                     </div>    
                         <div>
                             <div style=" margin-right: 290px; margin-top: 0.5px;">

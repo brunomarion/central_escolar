@@ -11,17 +11,13 @@ body{
     margin: auto;
 
 }
-.conteiner{
-    background-color: #050a30;
-    display: flex;
-    padding: 10px;
-    height: 420px;
-    margin-right: 150px;
-    margin-left: 150px;
-    border-radius: 10px;
-    justify-content: space-around;
-    align-items: center;
 
+.conteiner_menu{
+    background-color: #050a30;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 img{
