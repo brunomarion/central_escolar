@@ -33,7 +33,7 @@
         include("../config.php");
         $nome = $_POST['nome_aluno'];
         $serie = $_POST['serie'];
-        $turno = $_POST['turno'];
+        $turno = $_POST['periodo'];
         $obs = $_POST['obs'];
 
         //Criando Variável para realizar a conexão com a variável criada no "config.php":
@@ -124,9 +124,9 @@
                             <div style=" margin-right: 290px; margin-top: 0.5px;">
                                 <p style="font-size: 15px;">Turno</p>
                                     <div style="flex-direction: row; margin-top: 3px;">
-                                        <input type="checkbox" id="turno" name="turno" />
+                                        <input type="radio" id="periodo" name="periodo" />
                                         <label for="scales">Manhã</label>
-                                        <input type="checkbox" id="turno" name="turno" />
+                                        <input type="radio" id="periodo" name="periodo" />
                                         <label for="scales">Tarde</label>
                                     </div>
                             </div>

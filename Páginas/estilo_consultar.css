@@ -1,0 +1,41 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url(../Imagens/imagemfundo.png);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.logo_principal{
+    width: 200px;
+    display: block;
+    margin: auto;
+
+}
+
+.conteiner{
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-size: 14px;
+    background-color: #050a30;
+    height: 485px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 3px;
+    margin-top: 20px;
+    border-radius: 7px;
+    flex-direction: column;
+}
+
+.titulo1{
+    text-align: start;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    height: 33px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
