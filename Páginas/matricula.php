@@ -105,21 +105,10 @@
                         <input style="width: 300px;" type="text" placeholder="&#9998 Digite o nome completo" name="nome_aluno" id="aluno">
                     </div>
                     <div class="campo" style=" display: flex; flex-direction: row; justify-content: space-between; height: 100px;">
-                        <div style="margin-left: 290px; margin-top: 1px;">
-                            <label for="">Série </label>
-                            <select style="width: 130px; height: 28px;" name="serie" id="serie">
-                                <option>Selecione</option>
-                                <option value="">Infantil II</option>
-                                <option value="">Infantil III</option>
-                                <option value="">Infantil IV</option>
-                                <option value="">Infantil V</option>
-                                <option value="">1ºano</option>
-                                <option value="">2ºano</option>
-                                <option value="">3ºano</option>
-                                <option value="">4ºano</option>
-                                <option value="">5ºano</option>
-                            </select>
-                        </div>
+                    <div class="campo" style="margin-left: 290px; margin-top: 3px">
+                        <label for="">Série</label>
+                        <input type="text" placeholder="Digite a série do 1º ano 5ºano" name="cep" id="rg-responsavel">
+                    </div>    
                         <div>
                             <div style=" margin-right: 290px; margin-top: 0.5px;">
                                 <p style="font-size: 15px;">Turno</p>
